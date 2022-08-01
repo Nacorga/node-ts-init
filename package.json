@@ -1,0 +1,30 @@
+{
+  "name": "neboolar-core-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:local": "nodemon",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
+    "lint": "eslint ./src --ext .ts",
+    "format": "prettier --config ./.prettierrc --write \"src/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "commitlint": "^17.0.3",
+    "eslint": "^8.21.0",
+    "husky": "^8.0.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "commitlint": {
+    "extends": "@commitlint/config-conventional"
+  }
+}
